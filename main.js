@@ -21,3 +21,13 @@ userButton.addEventListener('click', () => {
     )
 })
 
+let loginForm = document.querySelector('#loginForm')
+let usernameField = document.querySelector('[name=username]')
+let passwordField = document.querySelector('[name=password]')
+
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log(event.target);
+    console.log(usernameField.value)
+    console.log(passwordField.value)
+})
